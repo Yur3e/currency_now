@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "CurrencyNOW ",
+  "version": "1.0",
+  "description": "Convert currency using ExchangeRate API",
+  "icons": {
+    "16": "icon1.png",
+    "48": "icon2.png",
+    "128": "icon3.png"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "https://api.exchangerate-api.com/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}

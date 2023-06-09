@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CurrencyNOW</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 10px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input {
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+    button {
+      padding: 8px 16px;
+    }
+    #result {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Currency NOW</h1>
+  <label for="currency">Moeda:</label>
+  <input type="text" id="currency" placeholder="Digite a moeda que deseja converter" required>
+  <label for="value">Valor:</label>
+  <input type="number" id="value" placeholder="Digite um valor" required>
+  <label for="convertTo">Converter para:</label>
+  <input type="text" id="convertTo" placeholder="Digite a moeda que deseja converter" required>
+  <button id="convertButton">Converter</button>
+  <div id="result"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
