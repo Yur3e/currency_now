@@ -1,39 +1,47 @@
-# CurrencyNOW Extension
+# CurrencyNOW
 
-Este é um repositório do GitHub que contém a extensão CurrencyNOW para navegadores. Ela permite aos usuários acessar informações sobre taxas de câmbio de moedas e realizar conversões diretamente na barra de ferramentas do navegador. O projeto foi desenvolvido por Yur3e.
+CurrencyNOW é uma extensão para o navegador Google Chrome que permite a conversão de moedas de forma rápida e conveniente. Essa extensão é baseada no [CurrencyNOW-Python](https://github.com/Yur3e/CurrencyNOW-Python) originalmente criado por [Yur3e](https://github.com/Yur3e). O aplicativo permite que os usuários convertam valores de uma moeda para outra com base nas taxas de câmbio obtidas de uma API.
 
-## Visão geral
+## Funcionalidades
 
-A CurrencyNOW Extension é uma extensão para navegadores que oferece acesso rápido e conveniente a informações de taxas de câmbio e conversão de moedas. Com a extensão instalada, os usuários podem visualizar as taxas de câmbio atualizadas e converter valores entre diferentes moedas sem precisar abrir um aplicativo separado.
+- Conversão de moedas em tempo real com base nas taxas de câmbio mais recentes.
+- Interface simples e intuitiva.
+- Suporte para várias moedas.
 
-## Recursos
+## Instalação
 
-O repositório contém os seguintes arquivos e diretórios principais:
+Para utilizar a extensão CurrencyNOW, siga as etapas abaixo:
 
-- `background.js`: Arquivo JavaScript que gerencia o comportamento da extensão em segundo plano.
-- `popup.html`: Página HTML exibida ao clicar no ícone da extensão na barra de ferramentas.
-- `popup.js`: Arquivo JavaScript responsável pela lógica de interação da página popup.
-- `icon.png`: Ícone da extensão exibido na barra de ferramentas do navegador.
+1. Clone o repositório ou faça o download do código fonte para sua máquina local.
+2. Abra o Google Chrome e vá para a página de extensões digitando `chrome://extensions` na barra de endereço.
+3. No canto superior direito da página de extensões, ative o modo de desenvolvedor.
+4. Clique em "Carregar sem compactação" e selecione a pasta do repositório clonado ou do código fonte baixado.
+5. A extensão CurrencyNOW será adicionada ao seu navegador e estará pronta para uso.
 
-## Como usar
+## Uso
 
-Para utilizar a CurrencyNOW Extension, siga as instruções abaixo:
+Após instalar a extensão CurrencyNOW, siga as instruções abaixo para converter moedas:
 
-1. Faça o download e instale a extensão a partir do Chrome Web Store (ou outro repositório de extensões compatível com seu navegador).
-2. Após a instalação, um ícone da extensão será exibido na barra de ferramentas do navegador.
-3. Clique no ícone da extensão para abrir a página popup.
-4. Na página popup, selecione a moeda de origem no campo "De" e a moeda de destino no campo "Para".
-5. Insira o valor a ser convertido no campo "Valor".
-6. Clique no botão "Converter" para exibir o valor convertido na página popup.
+1. Clique no ícone da extensão na barra de ferramentas do Chrome.
+2. Na janela pop-up, preencha os campos de entrada com a moeda a converter, o valor e a moeda de conversão.
+3. Clique no botão "Converter" para realizar a conversão.
+4. O resultado da conversão será exibido na área designada.
 
 ## Contribuição
 
-Se você deseja contribuir para o projeto, siga as etapas abaixo:
+Contribuições são bem-vindas! Se você quiser contribuir com o projeto CurrencyNOW, siga as etapas abaixo:
 
 1. Faça um fork do repositório.
-2. Clone o repositório forkado para o seu computador.
-3. Crie uma branch para realizar as modificações: `git checkout -b minha-modificacao`.
-4. Faça as alterações desejadas no código.
-5. Faça commit das suas alterações: `git commit -m "Minha modificação"`.
-6. Faça push para a branch no seu fork: `git push origin minha-modificacao`.
-7. Abra um pull request no repositório original.
+2. Crie uma branch para a sua nova funcionalidade ou correção de bug: `git checkout -b minha-nova-funcionalidade`.
+3. Faça as alterações necessárias e adicione os arquivos modificados: `git add .`.
+4. Faça um commit das suas alterações: `git commit -m "Adiciona nova funcionalidade"`.
+5. Faça um push para a branch criada no seu fork: `git push origin minha-nova-funcionalidade`.
+6. Envie um Pull Request com as suas alterações.
+
+## Licença
+
+Este projeto está licenciado sob a [Licença MIT](https://github.com/Yur3e/CurrencyNOW/blob/main/LICENSE).
+
+## Autor
+
+CurrencyNOW foi desenvolvido por [Yur3e](https://github.com/Yur3e).
