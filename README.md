@@ -38,10 +38,6 @@ Contribuições são bem-vindas! Se você quiser contribuir com o projeto Curren
 5. Faça um push para a branch criada no seu fork: `git push origin minha-nova-funcionalidade`.
 6. Envie um Pull Request com as suas alterações.
 
-## Licença
-
-Este projeto está licenciado sob a [Licença MIT](https://github.com/Yur3e/CurrencyNOW/blob/main/LICENSE).
-
 ## Autor
 
 CurrencyNOW foi desenvolvido por [Yur3e](https://github.com/Yur3e).
