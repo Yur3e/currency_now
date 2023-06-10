@@ -39,7 +39,3 @@ Contribuições são bem-vindas! Se você quiser contribuir com o projeto Curren
 4. Faça um commit das suas alterações: `git commit -m "Adiciona nova funcionalidade"`.
 5. Faça um push para a branch criada no seu fork: `git push origin minha-nova-funcionalidade`.
 6. Envie um Pull Request com as suas alterações.
-
-## Autor
-
-CurrencyNOW foi desenvolvido por [Yur3e](https://github.com/Yur3e).
