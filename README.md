@@ -2,7 +2,6 @@
 
 CurrencyNOW é uma extensão para o navegador Google Chrome que permite a conversão de moedas de forma rápida e conveniente. Essa extensão é baseada no [CurrencyNOW-Python](https://github.com/Yur3e/CurrencyNOW-Python) originalmente criado por [Yur3e](https://github.com/Yur3e). O aplicativo permite que os usuários convertam valores de uma moeda para outra com base nas taxas de câmbio obtidas de uma API.
 
-![CurrencyNOW](https://github.com/Yur3e/CurrencyNOW/assets/88630655/9cdc1379-3a54-4201-8a05-413bc8179c54)
 
 
 ## Funcionalidades
