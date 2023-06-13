@@ -1,5 +1,5 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  var url = 'https://api.exchangerate-api.com/v4/latest/' + request.currency + '?access_key=d0611b60031f57d5f70186ae';
+  var url = 'https://api.exchangerate-api.com/v4/latest/' + request.currency + '?access_key=YOURKEY';
 
   fetch(url)
     .then(function(response) {
