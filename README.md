@@ -32,11 +32,4 @@ Após instalar a extensão CurrencyNOW, siga as instruções abaixo para convert
 
 ## Contribuição
 
-Contribuições são bem-vindas! Se você quiser contribuir com o projeto CurrencyNOW, siga as etapas abaixo:
-
-1. Faça um fork do repositório.
-2. Crie uma branch para a sua nova funcionalidade ou correção de bug: `git checkout -b minha-nova-funcionalidade`.
-3. Faça as alterações necessárias e adicione os arquivos modificados: `git add .`.
-4. Faça um commit das suas alterações: `git commit -m "Adiciona nova funcionalidade"`.
-5. Faça um push para a branch criada no seu fork: `git push origin minha-nova-funcionalidade`.
-6. Envie um Pull Request com as suas alterações.
+Contribuições são bem-vindas! Se você quiser contribuir com o projeto CurrencyNOW :)
