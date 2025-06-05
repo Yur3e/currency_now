@@ -1,20 +1,30 @@
 {
   "manifest_version": 3,
-  "name": "CurrencyNOW ",
-  "version": "1.0",
-  "description": "Convert currency using ExchangeRate API",
+  "name": "CurrencyNOW",
+  "version": "2.0",
+  "description": "Conversor de moedas em tempo real usando ExchangeRate API",
   "icons": {
-    "16": "icon1.png",
-    "48": "icon2.png",
-    "128": "icon3.png"
+    "16": "assets/icon1.png",
+    "48": "assets/icon2.png",
+    "128": "assets/icon3.png"
   },
   "action": {
-    "default_popup": "popup.html"
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icon1.png",
+      "32": "assets/icon2.png",
+      "48": "assets/icon3.png"
+    },
+    "default_title": "CurrencyNOW - Conversor de Moedas"
   },
   "permissions": [
-    "https://api.exchangerate-api.com/*"
+    "storage"
+  ],
+  "host_permissions": [
+    "https://v6.exchangerate-api.com/*"
   ],
   "background": {
-    "service_worker": "background.js"
+    "service_worker": "background.js",
+    "type": "module"
   }
 }

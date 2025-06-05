@@ -1,20 +1,43 @@
 chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
-  var url = 'https://api.exchangerate-api.com/v4/latest/' + request.currency + '?access_key=YOURKEY';
+  if (!request.currency || !request.convertTo || !request.value) {
+    sendResponse({error: "Dados incompletos"});
+    return;
+  }
 
-  fetch(url)
-    .then(function(response) {
-      return response.json();
-    })
-    .then(function(data) {
-      var rate = data.rates[request.convertTo];
-      var convertedValue = parseFloat(request.value) * rate;
-      
-      // Obtenha o símbolo da moeda de destino com base na configuração regional do usuário
-      var toCurrencySymbol = new Intl.NumberFormat(navigator.language, { style: 'currency', currency: request.convertTo }).formatToParts(1)[0].value;
-      
-      var result = 'Você selecionou ' + request.currency + ' para ' + request.convertTo + ' no valor de ' + new Intl.NumberFormat(navigator.language, { style: 'currency', currency: request.currency }).format(request.value) + ' = ' + toCurrencySymbol + ' ' + convertedValue.toFixed(2);
-      sendResponse({result: result});
+  // URL corrigida - usando a moeda de origem corretamente
+  var url = `https://v6.exchangerate-api.com/v6/d0611b60031f57d5f70186ae/latest/${request.currency}`;
+
+  fetch(url, {
+    method: 'GET',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => {
+    if (!response.ok) {
+      throw new Error(`Erro na API: ${response.status}`);
+    }
+    return response.json();
+  })
+  .then(data => {
+    if (!data.conversion_rates || !data.conversion_rates[request.convertTo]) {
+      throw new Error("Moeda não encontrada");
+    }
+
+    const rate = data.conversion_rates[request.convertTo];
+    const convertedValue = parseFloat(request.value) * rate;
+    
+    sendResponse({
+      success: true,
+      result: convertedValue.toFixed(2),
+      rate: rate,
+      currency: request.convertTo
     });
+  })
+  .catch(error => {
+    console.error("Erro na conversão:", error);
+    sendResponse({error: "Falha na conversão: " + error.message});
+  });
 
-  return true; // Para permitir o envio assíncrono da resposta
+  return true;
 });

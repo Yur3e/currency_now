@@ -6,31 +6,46 @@
     body {
       font-family: Arial, sans-serif;
       padding: 10px;
+      width: 300px;
     }
     label {
       display: block;
       margin-bottom: 5px;
+      font-weight: bold;
     }
     input {
       margin-bottom: 10px;
-      padding: 5px;
+      padding: 8px;
+      width: 100%;
+      box-sizing: border-box;
     }
     button {
-      padding: 8px 16px;
+      padding: 10px;
+      width: 100%;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #45a049;
     }
     #result {
       margin-top: 20px;
+      padding: 10px;
+      background-color: #f8f8f8;
+      border-radius: 4px;
     }
   </style>
 </head>
 <body>
   <h1>Currency NOW</h1>
-  <label for="currency">Moeda:</label>
-  <input type="text" id="currency" placeholder="Digite a moeda que deseja converter" required>
-  <label for="value">Valor:</label>
-  <input type="number" id="value" placeholder="Digite um valor" required>
-  <label for="convertTo">Converter para:</label>
-  <input type="text" id="convertTo" placeholder="Digite a moeda que deseja converter" required>
+  <label for="currency">Moeda de origem (ex: USD, EUR, BRL):</label>
+  <input type="text" id="currency" placeholder="Ex: USD" required maxlength="3">
+  <label for="convertTo">Moeda de destino (ex: EUR, BRL, JPY):</label>
+  <input type="text" id="convertTo" placeholder="Ex: BRL" required maxlength="3">
+  <label for="value">Valor para converter:</label>
+  <input type="number" id="value" placeholder="Ex: 100" required step="0.01">
   <button id="convertButton">Converter</button>
   <div id="result"></div>
   <script src="popup.js"></script>
