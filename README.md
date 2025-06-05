@@ -2,11 +2,11 @@
 
 CurrencyNOW é uma extensão que está consumindo a ExchangeRate-API para obter cotações de moedas em tempo real. (ExchangeRate-API com delay na cotação.)
 
-V1:
-![CurrencyNOWjs](https://github.com/Yur3e/CurrencyNOW/assets/88630655/fc9c91d5-c208-4f46-ba90-677509f5cdb2)
 
-V2:
-![currencynow](https://github.com/user-attachments/assets/c0629900-7628-4c9f-9322-b4cf5d5e6b25)
+V1: ![CurrencyNOWjs](https://github.com/Yur3e/CurrencyNOW/assets/88630655/fc9c91d5-c208-4f46-ba90-677509f5cdb2)
+
+
+V2: ![currencynow](https://github.com/user-attachments/assets/c0629900-7628-4c9f-9322-b4cf5d5e6b25)
 
 
 ## Funcionalidades
